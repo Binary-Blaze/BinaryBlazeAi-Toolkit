@@ -16,7 +16,7 @@
     forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
   in
   {
-    nixosModules.default = { config, lib, pkgs, ... }: {
+    nixosModules.default = { lib, pkgs, ... }: {
       imports = [ ./modules/ai-toolkit-containers.nix ];
 
       services.aiToolkitContainers.defaults = {
