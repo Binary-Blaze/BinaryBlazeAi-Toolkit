@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ lib, pkgs, ... }:
 
 let
   inherit (lib) mkEnableOption mkIf mkOption types mkMerge mapAttrsToList optionalString;
